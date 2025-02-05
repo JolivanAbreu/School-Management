@@ -22,8 +22,7 @@ class GSE
             Action acao = option switch
             {
                 1 => GerAlunos,
-                2 => () => { /* Lógica do case 3 */ }
-                ,
+                2 => GerTurmas,
                 3 => () => { /* Lógica do case 3 */ }
                 ,
                 4 => () => { /* Lógica do case 4 */ }
@@ -47,6 +46,12 @@ class GSE
     {
         Alunos alunos = new Alunos();
         Alunos.GerAlunos();
+    }
+
+    private static void GerTurmas()
+    {
+        Turmas turmas = new Turmas();
+        Turmas.GerTurmas();
     }
 
     private static void GerProfessore()

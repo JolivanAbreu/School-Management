@@ -15,16 +15,16 @@ class Professores()
             Console.WriteLine("5. Voltar");
 
             Console.Write("Informe uma opção: ");
-            int OptionAl;
+            int OptionProf;
 
 
-            if (!int.TryParse(Console.ReadLine(), out OptionAl))
+            if (!int.TryParse(Console.ReadLine(), out OptionProf))
             {
                 Console.WriteLine("Opção inválida. Tente novamente.");
                 continue;
             }
 
-            Action acao = OptionAl switch
+            Action acao = OptionProf switch
             {
                 1 => CadProfessor.CadastrarProfessores,
                 2 => ListProfessor.ListarProfessores,
