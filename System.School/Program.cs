@@ -9,8 +9,9 @@ class GSE
             Console.WriteLine("1. Gerenciamento de Alunos");
             Console.WriteLine("2. Gerenciamento de Turmas");
             Console.WriteLine("3. Gerenciamento de Disciplinas");
-            Console.WriteLine("4. Geração de Relatorio");
-            Console.WriteLine("5. Sair");
+            Console.WriteLine("4. Gerenciamento de Professores");
+            Console.WriteLine("5. Geração de Relatorio");
+            Console.WriteLine("6. Sair");
 
             Console.Write("Escolha uma opção: ");
             int option = int.Parse(Console.ReadLine());
@@ -21,13 +22,14 @@ class GSE
             Action acao = option switch
             {
                 1 => GerAlunos,
-                2 => () => { /* Lógica do case 2 */ }
+                2 => () => { /* Lógica do case 3 */ }
                 ,
                 3 => () => { /* Lógica do case 3 */ }
                 ,
                 4 => () => { /* Lógica do case 4 */ }
                 ,
-                5 => () =>
+                5 => GerProfessore,
+                6 => () =>
                 {
                     Console.WriteLine("\n Saindo...");
                     Environment.Exit(0); 
@@ -45,6 +47,12 @@ class GSE
     {
         Alunos alunos = new Alunos();
         Alunos.GerAlunos();
+    }
+
+    private static void GerProfessore()
+    {
+        Professores professores = new Professores();
+        Professores.GerProfessor();
     }
 
     /*private static void GerTurmas()

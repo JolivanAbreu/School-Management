@@ -1,6 +1,5 @@
 class Alunos()
 {
-    private static List<Aluno> listaAlunos = new List<Aluno>();
     public static void GerAlunos()
     {
         while (true)
