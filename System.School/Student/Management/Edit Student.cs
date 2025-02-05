@@ -39,7 +39,7 @@ public class EditAluno
         switch (edit)
         {
             case 1:
-                info.Info();
+                GInformações.Info(aluno);
                 break;
             case 2:
                 GNotas.Nota(aluno);
