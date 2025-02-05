@@ -1,0 +1,14 @@
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\Gerenciamento Escolar\bin\Debug\net9.0\Gerenciamento Escolar.exe
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\Gerenciamento Escolar\bin\Debug\net9.0\Gerenciamento Escolar.deps.json
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\Gerenciamento Escolar\bin\Debug\net9.0\Gerenciamento Escolar.runtimeconfig.json
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\Gerenciamento Escolar\bin\Debug\net9.0\Gerenciamento Escolar.dll
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\Gerenciamento Escolar\bin\Debug\net9.0\Gerenciamento Escolar.pdb
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\Gerenciamento Escolar\obj\Debug\net9.0\Gerenciamento Escolar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\Gerenciamento Escolar\obj\Debug\net9.0\Gerenciamento Escolar.AssemblyInfoInputs.cache
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\Gerenciamento Escolar\obj\Debug\net9.0\Gerenciamento Escolar.AssemblyInfo.cs
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\Gerenciamento Escolar\obj\Debug\net9.0\Gerenciamento Escolar.csproj.CoreCompileInputs.cache
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\Gerenciamento Escolar\obj\Debug\net9.0\Gerenciamento Escolar.dll
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\Gerenciamento Escolar\obj\Debug\net9.0\refint\Gerenciamento Escolar.dll
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\Gerenciamento Escolar\obj\Debug\net9.0\Gerenciamento Escolar.pdb
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\Gerenciamento Escolar\obj\Debug\net9.0\Gerenciamento Escolar.genruntimeconfig.cache
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\Gerenciamento Escolar\obj\Debug\net9.0\ref\Gerenciamento Escolar.dll
