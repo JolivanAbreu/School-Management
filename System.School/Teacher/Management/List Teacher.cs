@@ -12,8 +12,8 @@ public class ListProfessor()
             Console.WriteLine("\n===== Lista de Professores ======");
             foreach (Professor professor in CadProfessor.listaProfessores)
             {
-                Console.WriteLine($"Nome: {professor.Nome}");
                 Console.WriteLine($"Matrícula: {professor.Matricula}");
+                Console.WriteLine($"Nome: {professor.Nome}");
                 Console.WriteLine($"Carga Horária: {professor.Horario} horas");
             }
         }

@@ -26,7 +26,7 @@ public class ListaTurma
             // Lista de alunos na turma
             if (turma.Alunos != null && turma.Alunos.Count > 0)
             {
-                Console.WriteLine("👨‍🎓 Alunos:");
+                Console.Write("👨‍🎓 Alunos:");
                 foreach (var aluno in turma.Alunos)
                 {
                     Console.WriteLine($"- {aluno.Nome} (Matrícula: {aluno.Matricula})");

@@ -26,7 +26,7 @@ public class CTurma
             Console.WriteLine($"{i + 1} - {CadProfessor.listaProfessores[i].Nome} (Matrícula: {CadProfessor.listaProfessores[i].Matricula})");
         }
 
-        Console.Write("Escolha o número do professor: ");
+        Console.Write("\nEscolha o número do professor: ");
         int escolhaProfessor = int.Parse(Console.ReadLine()) - 1;
 
         if (escolhaProfessor < 0 || escolhaProfessor >= CadProfessor.listaProfessores.Count)
@@ -51,7 +51,7 @@ public class CTurma
             Console.WriteLine($"{i + 1} - {CAluno.listaAlunos[i].Nome} (Matrícula: {CAluno.listaAlunos[i].Matricula})");
         }
 
-        Console.WriteLine("\nDigite os números dos alunos separados por vírgula (ex: 1,3,5): ");
+        Console.Write("\nDigite os números dos alunos separados por vírgula (ex: 1,3,5): ");
         string[] escolhasAlunos = Console.ReadLine().Split(',');
 
         foreach (string escolha in escolhasAlunos)
