@@ -1,6 +1,7 @@
 public class CadProfessor
 {
-    public static List<Professor> listaProfessores = new List<Professor>();
+    public static List<Professor> listaProfessores = new List<Professor>(); // Certifique-se de que essa linha está presente
+
     public static void CadastrarProfessores()
     {
         Professor professor = new Professor();
@@ -13,14 +14,11 @@ public class CadProfessor
         Console.Write("\n Nome: ");
         professor.Nome = Console.ReadLine();
 
-        Console.Write(" Horario: ");
+        Console.Write(" Horário: ");
         professor.Horario = int.Parse(Console.ReadLine());
 
         listaProfessores.Add(professor);
 
         Console.Write("\n✅ Cadastro realizado com sucesso!\n");
-
-        return;
-                
     }
 }

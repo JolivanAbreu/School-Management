@@ -8,5 +8,5 @@ public class Turma()
     public double MediaTurma { get; set; }
     public int QuantidadeAlunos { get; set; }
     public string SituacaoTurma { get; set; }
-    public List<Professor> Professor {get; set;}
+    public Professor Professor { get; set; }
 }

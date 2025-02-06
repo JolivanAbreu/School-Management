@@ -29,13 +29,15 @@ class Turmas()
                 5 => () =>
                 {
                     Console.WriteLine("\nVoltando ao menu principal...");
-                    Environment.Exit(0); // Sai do programa
+                    return; // Sai do programa
                 }
                 ,
                 _ => () => Console.WriteLine("Opção inválida. Tente novamente.")
             };
 
             acao();
+
+            if(OptionTur == 5) return;
         }
     }
 

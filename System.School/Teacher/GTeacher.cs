@@ -17,10 +17,9 @@ class Professores()
             Console.Write("Informe uma opção: ");
             int OptionProf;
 
-
             if (!int.TryParse(Console.ReadLine(), out OptionProf))
             {
-                Console.WriteLine("Opção inválida. Tente novamente.");
+                Console.WriteLine("❌ Opção inválida. Tente novamente.");
                 continue;
             }
 
@@ -32,17 +31,19 @@ class Professores()
                 4 => RemAluno.RemoverAlunos,
                 5 => () =>
                 {
-                    Console.WriteLine("\nVoltando ao menu principal...");
-                    Environment.Exit(0); // Sai do programa
+                    Console.WriteLine("\n🔙 Voltando ao menu principal...");
+                    return;
                 }
                 ,
-                _ => () => Console.WriteLine("Opção inválida. Tente novamente.")
+                _ => () => Console.WriteLine("❌ Opção inválida. Tente novamente.")
             };
 
             acao();
-        }
 
+            if (OptionProf == 5) return;
+        }
     }
+
 
     private static void GerProfessores()
     {
@@ -53,6 +54,6 @@ class Professores()
     private static void ListProfessores()
     {
         ListProfessor listProfessor = new ListProfessor();
-        ListProfessor.ListarProfessores ();
+        ListProfessor.ListarProfessores();
     }
 }
