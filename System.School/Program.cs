@@ -25,9 +25,9 @@ class GSE
                 2 => GerTurmas,
                 3 => () => { /* Lógica do case 3 */ }
                 ,
-                4 => () => { /* Lógica do case 4 */ }
+                4 => GerProfessore
                 ,
-                5 => GerProfessore,
+                5 => () => { /* Lógica do case 5 */ },
                 6 => () =>
                 {
                     Console.WriteLine("\n Saindo...");
