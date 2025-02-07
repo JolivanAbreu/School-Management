@@ -38,7 +38,7 @@ class Alunos()
 
             acao();
 
-            if(OptionAl == 5) return;
+            if (OptionAl == 5) return;
         }
 
     }

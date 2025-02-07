@@ -23,10 +23,8 @@ class GSE
             {
                 1 => GerAlunos,
                 2 => GerTurmas,
-                3 => () => { /* Lógica do case 3 */ }
-                ,
-                4 => GerProfessore
-                ,
+                3 => GerDisciplina,
+                4 => GerProfessore,
                 5 => () => { /* Lógica do case 5 */ },
                 6 => () =>
                 {
@@ -58,6 +56,12 @@ class GSE
     {
         Professores professores = new Professores();
         Professores.GerProfessor();
+    }
+
+    private static void GerDisciplina()
+    {
+        Disciplinas disciplinas = new Disciplinas();
+        Disciplinas.GerDisciplinas();
     }
 
     /*private static void GerTurmas()
