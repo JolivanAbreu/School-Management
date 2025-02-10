@@ -13,28 +13,6 @@ public class ListaDisciplina
         {
             Console.WriteLine($"\n Matricula da Disciplina: {disciplina.Codigo}");
             Console.WriteLine($"\n📌 Nome da Disciplina: {disciplina.Nome} ");
-
-            if (disciplina.Professor != null)
-            {
-                Console.WriteLine($"👨‍🏫 Professor: {disciplina.Professor.Nome} (Matrícula: {disciplina.Professor.Matricula})");
-            }
-            else
-            {
-                Console.WriteLine("⚠️ Professor não cadastrado");
-            }
-
-            if (disciplina.Alunos != null && disciplina.Alunos.Count > 0)
-            {
-                Console.Write("👨‍🎓 Alunos:");
-                foreach (var aluno in disciplina.Alunos)
-                {
-                    Console.WriteLine($"\n- {aluno.Nome} (Matrícula: {aluno.Matricula})");
-                }
-            }
-            else
-            {
-                Console.WriteLine("⚠️ Nenhum aluno matriculado nesta turma.");
-            }
         }
 
     }

@@ -1,3 +1,5 @@
+using System.Data.Common;
+
 public class ListaTurma
 {
     public static void ListarTurmas()
@@ -35,6 +37,20 @@ public class ListaTurma
             else
             {
                 Console.WriteLine("⚠️ Nenhum aluno matriculado nesta turma.");
+            }
+
+            // Lista de disciplinas na turma
+            if (turma.Disciplina!= null && turma.Disciplina.Count > 0)
+            {
+                Console.Write("�� Disciplinas:");
+                foreach (var disciplina in turma.Disciplina)
+                {
+                    Console.WriteLine($"\n- {disciplina.Nome}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("���️ Nenhuma disciplina cadastrada nesta turma.");
             }
         }
     }

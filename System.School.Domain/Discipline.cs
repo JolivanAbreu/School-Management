@@ -3,8 +3,6 @@ public class Disciplina()
     int contador;
     public int Codigo {get; set;}
     public string Nome { get; set; }
-    public Professor Professor { get; set; }
-    public List<Aluno> Alunos { get; set; }
     public int GerarMatricula()
     {
         string anoAtual = DateTime.Now.Year.ToString();
