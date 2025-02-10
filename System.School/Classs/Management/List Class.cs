@@ -29,7 +29,7 @@ public class ListaTurma
                 Console.Write("👨‍🎓 Alunos:");
                 foreach (var aluno in turma.Alunos)
                 {
-                    Console.WriteLine($"- {aluno.Nome} (Matrícula: {aluno.Matricula})");
+                    Console.WriteLine($"\n- {aluno.Nome} (Matrícula: {aluno.Matricula})");
                 }
             }
             else
