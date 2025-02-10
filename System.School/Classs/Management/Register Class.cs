@@ -10,6 +10,8 @@ public class CTurma
         Turma turma = new Turma();
 
         Console.WriteLine("\n====== Cadastrar Turma ======");
+        turma.Numero = turma.GerarMatricula();
+        Console.Write($"Matricula: {turma.Numero}");
         Console.Write("Nome da Turma: ");
         turma.Nome = Console.ReadLine();
 

@@ -13,7 +13,8 @@ public class ListaTurma
         Console.WriteLine("\n===== 📋 Lista de Turmas ======");
         foreach (var turma in CTurma.listaTurmas)
         {
-            Console.WriteLine($"\n📌 Nome da Turma: {turma.Nome}");
+            Console.WriteLine($"Código: {turma.Numero}");
+            Console.WriteLine($"📌 Nome da Turma: {turma.Nome}");
             
             // Verifica se a turma tem um professor atribuído
             if (turma.Professor != null)
@@ -45,7 +46,7 @@ public class ListaTurma
                 Console.Write("�� Disciplinas:");
                 foreach (var disciplina in turma.Disciplina)
                 {
-                    Console.WriteLine($"\n- {disciplina.Nome}");
+                    Console.WriteLine($"\n- {disciplina.Nome} (Código: {disciplina.Codigo})");
                 }
             }
             else

@@ -24,7 +24,7 @@ class Turmas()
             {
                 1 => CTurma.CadastrarTurmas,
                 2 => ListaTurma.ListarTurmas,
-                3 => EditAluno.EditarAlunos,
+                3 => EditTurma.EditarTurma,
                 4 => RemAluno.RemoverAlunos,
                 5 => () =>
                 {
@@ -52,5 +52,11 @@ class Turmas()
         ListaTurma listarTurmas = new ListaTurma();
         ListaTurma.ListarTurmas();
 
+    }
+
+    public static void EditarTurmas()
+    {
+        EditTurma editTurma = new EditTurma();
+        EditTurma.EditarTurma();
     }
 }
