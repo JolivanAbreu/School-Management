@@ -4,19 +4,18 @@ class Turmas()
     {
         while (true)
         {
-            Console.WriteLine("\n====== Gerenciamento de Turmas ======");
-            Console.WriteLine("1. Cadastrar Turmas");
-            Console.WriteLine("2. Listar Turmas");
-            Console.WriteLine("3. Editar Turmas");
-            Console.WriteLine("4. Remover Turmas");
-            Console.WriteLine("5. Voltar");
-
-            Console.Write("Digite a opção: ");
+            Console.WriteLine("\n========== GERENCIAMENTO DE TURMAS ==========");
+            Console.WriteLine("[1] Cadastrar Turma");
+            Console.WriteLine("[2] Listar Turmas");
+            Console.WriteLine("[3] Editar Turma");
+            Console.WriteLine("[4] Remover Turma");
+            Console.WriteLine("[5] Voltar ao Menu Principal");
+            Console.Write("\nEscolha uma opção: ");
             int OptionTur;
 
             if (!int.TryParse(Console.ReadLine(), out OptionTur))
             {
-                Console.WriteLine("Opção inválida. Tente novamente.");
+                Console.WriteLine("\n❌ Opção inválida! Tente novamente.");
                 continue;
             }
 
@@ -25,14 +24,14 @@ class Turmas()
                 1 => CTurma.CadastrarTurmas,
                 2 => ListaTurma.ListarTurmas,
                 3 => EditTurma.EditarTurma,
-                4 => RemAluno.RemoverAlunos,
+                4 => RemTurma.RemoverTurmas,
                 5 => () =>
                 {
-                    Console.WriteLine("\nVoltando ao menu principal...");
-                    return; // Sai do programa
+                    Console.WriteLine("\n🔙 Retornando ao menu principal...");
+                    return;
                 }
                 ,
-                _ => () => Console.WriteLine("Opção inválida. Tente novamente.")
+                _ => () => Console.WriteLine("\n❌ Opção inválida! Tente novamente.")
             };
 
             acao();
@@ -58,5 +57,11 @@ class Turmas()
     {
         EditTurma editTurma = new EditTurma();
         EditTurma.EditarTurma();
+    }
+
+    public static void RemoverTurmas()
+    {
+        RemTurma remTurma = new RemTurma();
+        RemTurma.RemoverTurmas();
     }
 }

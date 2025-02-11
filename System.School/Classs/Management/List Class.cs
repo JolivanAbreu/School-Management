@@ -13,7 +13,7 @@ public class ListaTurma
         Console.WriteLine("\n===== 📋 Lista de Turmas ======");
         foreach (var turma in CTurma.listaTurmas)
         {
-            Console.WriteLine($"Código: {turma.Numero}");
+            Console.WriteLine($"\nCódigo: {turma.Numero}");
             Console.WriteLine($"📌 Nome da Turma: {turma.Nome}");
             
             // Verifica se a turma tem um professor atribuído
