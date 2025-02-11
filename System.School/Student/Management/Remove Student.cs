@@ -19,11 +19,6 @@ public class RemAluno
 
         Aluno aluno = CAluno.listaAlunos.Find(a => a.Matricula == matricula);
 
-        while (!int.TryParse(Console.ReadLine(), out matricula))
-        {
-            Console.Write("\n⚠️ Número inválido! Informe uma matrícula válida: ");
-        }
-
         if (aluno == null)
         {
             Console.WriteLine("\n❌ Matrícula não encontrada.");
