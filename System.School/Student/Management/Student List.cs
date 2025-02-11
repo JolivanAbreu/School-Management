@@ -4,15 +4,15 @@ public class ListAluno
     {
         if (CAluno.listaAlunos.Count == 0)
         {
-            Console.WriteLine("\n Não há alunos cadastrados.\n");
+            Console.WriteLine("\n⚠️ Não há alunos cadastrados no sistema.\n");
             return;
         }
         else
         {
-            Console.WriteLine("\n===== Lista de Alunos ======");
+            Console.WriteLine("\n===== 📜 Lista de Alunos =====");
             foreach (var aluno in CAluno.listaAlunos)
             {
-                Console.WriteLine($"\n Matricula: {aluno.Matricula} \n Nome: {aluno.Nome} \n Idade 1: {aluno.Idade} \n Nota 1: {aluno.Nota1} \n Nota 2: {aluno.Nota2} \n Nota 3: {aluno.Nota3}");
+                Console.WriteLine($"\n📌 Matrícula: {aluno.Matricula} \n👤 Nome: {aluno.Nome} \n🎂 Idade: {aluno.Idade} \n📊 Nota 1: {aluno.Nota1} \n📊 Nota 2: {aluno.Nota2} \n📊 Nota 3: {aluno.Nota3}");
             }
         }
     }

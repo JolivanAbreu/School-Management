@@ -4,12 +4,12 @@ public class RemAluno
     {
         if (CAluno.listaAlunos.Count == 0)
         {
-            Console.WriteLine("\n❌ Nenhum aluno cadastrado para remover.");
+            Console.WriteLine("\n❌ Nenhum aluno cadastrado para remoção.");
+            return;
         }
 
-        Console.Write("\n===== Exclução de Alunos =====");
-
-        Console.Write("\nDigite a matricula do aluno: ");
+        Console.WriteLine("\n===== 🗑️ Exclusão de Alunos =====");
+        Console.Write("🔢 Digite a matrícula do aluno: ");
         int matricula;
 
         while (!int.TryParse(Console.ReadLine(), out matricula))
@@ -19,6 +19,11 @@ public class RemAluno
         }
 
         Aluno aluno = CAluno.listaAlunos.Find(a => a.Matricula == matricula);
+
+        while (!int.TryParse(Console.ReadLine(), out matricula))
+        {
+            Console.Write("\n⚠️ Número inválido! Informe uma matrícula válida: ");
+        }
 
         if (aluno == null)
         {

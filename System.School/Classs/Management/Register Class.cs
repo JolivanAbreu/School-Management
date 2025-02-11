@@ -12,7 +12,7 @@ public class CTurma
         Console.WriteLine("\n====== Cadastrar Turma ======");
         turma.Numero = turma.GerarMatricula();
         Console.Write($"Matricula: {turma.Numero}");
-        Console.Write("Nome da Turma: ");
+        Console.Write("\nNome da Turma: ");
         turma.Nome = Console.ReadLine();
 
         // Escolher professor já cadastrado

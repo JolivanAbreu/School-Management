@@ -4,20 +4,19 @@ class Alunos()
     {
         while (true)
         {
-            Console.WriteLine("\n====== Gerenciamento de Alunos ======");
-            Console.WriteLine("1. Cadastrar Aluno");
-            Console.WriteLine("2. Listar Alunos");
-            Console.WriteLine("3. Editar Aluno");
-            Console.WriteLine("4. Remover Aluno");
-            Console.WriteLine("5. Voltar");
-
-            Console.Write("Informe uma opção: ");
+            Console.WriteLine("\n========== GERENCIAMENTO DE ALUNOS ==========");
+            Console.WriteLine("[1] Cadastrar Aluno");
+            Console.WriteLine("[2] Listar Alunos");
+            Console.WriteLine("[3] Editar Aluno");
+            Console.WriteLine("[4] Remover Aluno");
+            Console.WriteLine("[5] Voltar ao Menu Principal");
+            Console.Write("\nEscolha uma opção: ");
             int OptionAl;
 
 
             if (!int.TryParse(Console.ReadLine(), out OptionAl))
             {
-                Console.WriteLine("Opção inválida. Tente novamente.");
+                Console.WriteLine("\n❌ Opção inválida! Tente novamente.");
                 continue;
             }
 
@@ -29,11 +28,11 @@ class Alunos()
                 4 => RemAluno.RemoverAlunos,
                 5 => () =>
                 {
-                    Console.WriteLine("\nVoltando ao menu principal...");
-                    return; // Sai do programa
+                    Console.WriteLine("\n🔙 Retornando ao menu principal...");
+                    return;
                 }
                 ,
-                _ => () => Console.WriteLine("Opção inválida. Tente novamente.")
+                _ => () => Console.WriteLine("\n❌ Opção inválida! Tente novamente.")
             };
 
             acao();

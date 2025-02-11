@@ -30,7 +30,7 @@ public class EditTurma
 
         Console.Write($"\nTurma encontrada: {turma.Nome}");
         Console.WriteLine("\n1. Nome da turma");
-        Console.WriteLine(" 2. Professor responsável");
+        Console.WriteLine(" 2. Professores");
         Console.WriteLine(" 3. Disciplinas");
         Console.Write("\n O que deseja alterar: ");
         int opcaoEdicao = int.Parse(Console.ReadLine());
@@ -46,7 +46,7 @@ public class EditTurma
                 GInforTurma.InfoTurmaProfessor(turma);
                 break;
             case 3:
-                //GInformações.(turma);
+                GInforTurma.InfoTurmaDisciplina(turma);
                 break;
         }
 

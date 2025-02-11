@@ -4,10 +4,10 @@ public class CAluno
     public static void CadastrarAlunos()
     {
         Aluno aluno = new Aluno();
-        Console.WriteLine("\n====== Cadastrar Aluno ======");
+        Console.WriteLine("\n========== CADASTRAR ALUNO ==========");
 
-        aluno.Matricula = aluno.GerarMatricula(); // Gera a matrícula automaticamente
-        Console.WriteLine($"Matrícula: {aluno.Matricula}"); // Exibe a matrícula gerada automaticamente
+        aluno.Matricula = aluno.GerarMatricula();
+        Console.WriteLine($"Matrícula gerada: {aluno.Matricula}");
 
         Console.Write("Nome: ");
         aluno.Nome = Console.ReadLine();
@@ -26,8 +26,7 @@ public class CAluno
 
         listaAlunos.Add(aluno);
 
-        Console.WriteLine("\n✅ Cadastro realizado com sucesso!\n");
-
+        Console.WriteLine("\n✅ Aluno cadastrado com sucesso!");
         return;
     }
 }
