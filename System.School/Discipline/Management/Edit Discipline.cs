@@ -4,7 +4,6 @@ public class EditDisciplina
     {
         Disciplina disciplina = new Disciplina();
 
-
         if (CDisciplina.listaDisciplina.Count == 0)
         {
             Console.WriteLine("\n❌ Nenhum aluno cadastrado para edição.");
