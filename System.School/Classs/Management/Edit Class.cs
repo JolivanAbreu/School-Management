@@ -43,7 +43,7 @@ public class EditTurma
                 break;
 
             case 2:
-                GInforTurma.InfoTurmaProfessor(turma);
+                GInforTurma.InfoTurma(turma);
                 break;
             case 3:
                 GInforTurma.InfoTurmaDisciplina(turma);

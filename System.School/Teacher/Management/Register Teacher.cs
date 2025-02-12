@@ -1,4 +1,4 @@
-public class CadProfessor
+public class CProfessor
 {
     public static List<Professor> listaProfessores = new List<Professor>(); // Certifique-se de que essa linha está presente
 

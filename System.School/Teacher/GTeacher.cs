@@ -25,9 +25,9 @@ class Professores()
 
             Action acao = OptionProf switch
             {
-                1 => CadProfessor.CadastrarProfessores,
+                1 => CProfessor.CadastrarProfessores,
                 2 => ListProfessor.ListarProfessores,
-                3 => EditAluno.EditarAlunos,
+                3 => EditProfessor.EditarProfessor,
                 4 => RemAluno.RemoverAlunos,
                 5 => () =>
                 {
@@ -47,13 +47,19 @@ class Professores()
 
     private static void GerProfessores()
     {
-        CadProfessor cadProfessore = new CadProfessor();
-        CadProfessor.CadastrarProfessores();
+        CProfessor cadProfessore = new CProfessor();
+        CProfessor.CadastrarProfessores();
     }
 
     private static void ListProfessores()
     {
         ListProfessor listProfessor = new ListProfessor();
         ListProfessor.ListarProfessores();
+    }
+
+    public static void EditarProfessores()
+    {
+        EditProfessor editProfessor = new EditProfessor();
+        EditProfessor.EditarProfessor();
     }
 }

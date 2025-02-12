@@ -12,33 +12,33 @@ public class CTurma
         Console.WriteLine("\n========== CADASTRAR TURMA ==========");
         turma.Numero = turma.GerarMatricula();
         Console.Write($"Matrícula gerada: {turma.Numero}");
-        
+
         Console.Write("\nNome da Turma: ");
         turma.Nome = Console.ReadLine();
 
         // Escolher professor já cadastrado
-        if (CadProfessor.listaProfessores.Count == 0)
+        if (CProfessor.listaProfessores.Count == 0)
         {
             Console.WriteLine("\n⚠️ Nenhum professor cadastrado! Cadastre um professor primeiro.");
             return;
         }
 
         Console.WriteLine("\nProfessores disponíveis:");
-        for (int i = 0; i < CadProfessor.listaProfessores.Count; i++)
+        for (int i = 0; i < CProfessor.listaProfessores.Count; i++)
         {
-            Console.WriteLine($"{i + 1} - {CadProfessor.listaProfessores[i].Nome} (Matrícula: {CadProfessor.listaProfessores[i].Matricula})");
+            Console.WriteLine($"{i + 1} - {CProfessor.listaProfessores[i].Nome} (Matrícula: {CProfessor.listaProfessores[i].Matricula})");
         }
 
         Console.Write("\nEscolha o número do professor: ");
         int escolhaProfessor = int.Parse(Console.ReadLine()) - 1;
 
-        if (escolhaProfessor < 0 || escolhaProfessor >= CadProfessor.listaProfessores.Count)
+        if (escolhaProfessor < 0 || escolhaProfessor >= CProfessor.listaProfessores.Count)
         {
             Console.WriteLine("\n⚠️ Escolha inválida.");
             return;
         }
 
-        turma.Professor = CadProfessor.listaProfessores[escolhaProfessor];
+        turma.Professor = CProfessor.listaProfessores[escolhaProfessor];
 
         // Escolher alunos já cadastrados
         if (CAluno.listaAlunos.Count == 0)

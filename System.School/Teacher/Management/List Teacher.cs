@@ -2,7 +2,7 @@ public class ListProfessor()
 {
     public static void ListarProfessores()
     {
-        if (CadProfessor.listaProfessores.Count == 0)
+        if (CProfessor.listaProfessores.Count == 0)
         {
             Console.WriteLine("\n Não há professores cadastrados.\n");
             return;
@@ -10,7 +10,7 @@ public class ListProfessor()
         else
         {
             Console.WriteLine("\n===== Lista de Professores ======");
-            foreach (Professor professor in CadProfessor.listaProfessores)
+            foreach (Professor professor in CProfessor.listaProfessores)
             {
                 Console.WriteLine($"Matrícula: {professor.Matricula}");
                 Console.WriteLine($"Nome: {professor.Nome}");
