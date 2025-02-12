@@ -25,7 +25,7 @@ class Disciplinas()
                 1 => CDisciplina.CadastrarDisciplina,
                 2 => ListaDisciplina.ListarDisciplina,
                 3 => EditAluno.EditarAlunos,
-                4 => RemAluno.RemoverAlunos,
+                4 => RemDisciplina.RemoverDisciplina,
                 5 => () =>
                 {
                     Console.WriteLine("\nVoltando ao menu principal...");
@@ -52,4 +52,16 @@ class Disciplinas()
         ListaDisciplina ListarDisciplina = new ListaDisciplina();
         ListaDisciplina.ListarDisciplina();
     }
+
+
+    public static void Editar()
+    {
+        
+    }
+
+    public static void Remover()
+    {
+      RemDisciplina remDisciplina = new RemDisciplina();
+      RemDisciplina.RemoverDisciplina();  
+    } 
 }

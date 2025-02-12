@@ -28,7 +28,7 @@ class Professores()
                 1 => CProfessor.CadastrarProfessores,
                 2 => ListProfessor.ListarProfessores,
                 3 => EditProfessor.EditarProfessor,
-                4 => RemAluno.RemoverAlunos,
+                4 => RemProfessor.RemoverProfessores,
                 5 => () =>
                 {
                     Console.WriteLine("\n🔙 Voltando ao menu principal...");
@@ -61,5 +61,11 @@ class Professores()
     {
         EditProfessor editProfessor = new EditProfessor();
         EditProfessor.EditarProfessor();
+    }
+
+    public static void RemoverProfessores()
+    {
+        RemProfessor remProfessor = new RemProfessor();
+        RemProfessor.RemoverProfessores();
     }
 }
