@@ -24,7 +24,7 @@ class Disciplinas()
             {
                 1 => CDisciplina.CadastrarDisciplina,
                 2 => ListaDisciplina.ListarDisciplina,
-                3 => EditAluno.EditarAlunos,
+                3 => EditDisciplina.EditarDisciplina,
                 4 => RemDisciplina.RemoverDisciplina,
                 5 => () =>
                 {
@@ -56,7 +56,7 @@ class Disciplinas()
 
     public static void Editar()
     {
-        
+        EditDisciplina.EditarDisciplina();
     }
 
     public static void Remover()
